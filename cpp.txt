@@ -1,0 +1,124 @@
+0 ++++++++++++++++++
+[1] Shape::CTOR
+[1] Circle::CTOR(double) -> r:3.000000
+[2] Shape::CTOR
+[2] Rectangle::CTOR(int) -> a:4/4
+[3] Shape::CCTOR from [1]
+[3] Circle::CCTOR -> m_radius:3.000000
+[4] Shape::CTOR
+[4] Circle::CTOR(double) -> r:1.000000
+[4] Circle::draw() -> m_radius:1.000000
+[3] Circle::draw() -> m_radius:3.000000
+[3] Circle::DTOR ->  m_radius:3.000000
+[3] Shape::draw()
+[3] Shape::DTOR
+~Scaleable
+[4] Shape::CTOR
+[4] Circle::CTOR(double) -> r:1.000000
+[4] Circle::draw() -> m_radius:4.000000
+[4] Circle::draw() -> m_radius:32.000000
+Rectangle::draw()  - 2, a:8/8
+-----report-----
+[1] Circle::draw() -> m_radius:96.000000
+Shape::printInventory - 4
+1 ++++++++++++++++++
+[5] Shape::CTOR
+[5] Circle::CTOR(double) -> r:3.000000
+[6] Shape::CTOR
+[6] Rectangle::CTOR(int) -> a:3/3
+[7] Shape::CTOR
+[7] Circle::CTOR(double) -> r:4.000000
+[5] Circle::draw() -> m_radius:3.000000
+Rectangle::draw()  - 6, a:3/3
+[7] Circle::draw() -> m_radius:4.000000
+[5] Circle::DTOR ->  m_radius:3.000000
+[5] Shape::draw()
+[5] Shape::DTOR
+~Scaleable
+[6] Rectangle::DTOR -> a:3/3
+[6] Shape::draw()
+[6] Shape::DTOR
+~Scaleable
+[7] Circle::DTOR ->  m_radius:4.000000
+[7] Shape::draw()
+[7] Shape::DTOR
+~Scaleable
+2 ++++++++++++++++++
+[5] Shape::CTOR
+[5] Circle::CTOR(double) -> r:3.000000
+[6] Shape::CCTOR from [5]
+[5] Circle::DTOR ->  m_radius:3.000000
+[5] Shape::draw()
+[5] Shape::DTOR
+~Scaleable
+[6] Shape::CTOR
+[6] Rectangle::CTOR(int) -> a:4/4
+[7] Shape::CCTOR from [6]
+[6] Rectangle::DTOR -> a:4/4
+[6] Shape::draw()
+[6] Shape::DTOR
+~Scaleable
+[7] Shape::CTOR
+[7] Circle::CTOR(double) -> r:9.000000
+[8] Shape::CCTOR from [7]
+[7] Circle::DTOR ->  m_radius:9.000000
+[7] Shape::draw()
+[7] Shape::DTOR
+~Scaleable
+[6] Shape::draw()
+[7] Shape::draw()
+[8] Shape::draw()
+[8] Shape::draw()
+[8] Shape::DTOR
+~Scaleable
+[7] Shape::draw()
+[7] Shape::DTOR
+~Scaleable
+[6] Shape::draw()
+[6] Shape::DTOR
+~Scaleable
+3 ++++++++++++++++++
+Shape::printInventory - 4
+[5] Shape::CTOR
+[5] Circle::CTOR(double) -> r:17.000000
+Shape::printInventory - 5
+4 ++++++++++++++++++
+Empty()
+Empty()
+EmptyEmpty()
+Empty()
+Empty()
+EmptyEmpty()
+EmptyBag
+Empty()
+~Empty()
+~Empty()
+~Empty()
+~Empty()
+~Empty()
+5 ++++++++++++++++++
+~Empty()
+~Empty()
+~Empty()
+~Empty()
+~Empty()
+[5] Circle::DTOR ->  m_radius:17.000000
+[5] Shape::draw()
+[5] Shape::DTOR
+~Scaleable
+[2] Rectangle::DTOR -> a:8/8
+[2] Shape::draw()
+[2] Shape::DTOR
+~Scaleable
+[1] Circle::DTOR ->  m_radius:96.000000
+[1] Shape::draw()
+[1] Shape::DTOR
+~Scaleable
+[4] Circle::DTOR ->  m_radius:32.000000
+[4] Shape::draw()
+[4] Shape::DTOR
+~Scaleable
+[4] Circle::DTOR ->  m_radius:1.000000
+[4] Shape::draw()
+[4] Shape::DTOR
+~Scaleable
